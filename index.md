@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to the project "Building a lowbudget UWV"
 
 You can use the [editor on GitHub](https://github.com/TLKoch/boat/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 

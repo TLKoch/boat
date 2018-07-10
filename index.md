@@ -4,7 +4,6 @@
 image/link to abstract
 
 ## Project Documentation
-image/link
 
 ### Idea
 image/link

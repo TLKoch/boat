@@ -1,0 +1,82 @@
+---
+title: "Raspberry Cam"
+author: "Kleebaue"
+date: "6 Juli 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Der folgende Eintrag erklärt die Einrichtung der Raspberry Pi Camera V2.1 und enthält ein Beispielskript zur automatischen Aufnahme von Bildern.
+
+### Aktivieren der Kamera
+
+```{}
+Einstellungen -> Raspberry-Pi-Konfiguration -> Schnittstellen -> Kamera aktiviert
+```
+
+##### In der Konsole
+```{}
+sudo raspi-config -> interfacing options -> Camera enable
+```
+
+### Kameraskript: 
+```{}
+#Bilderverzeihnis 
+IMGDIR='/home/pi/camera' 
+
+# Zeitstempel 
+TIME=$(date +%d%m%Y_%H:%M)
+
+# Bildbezeichnung mit laufender, zweistelliger Nummer
+BILD=$Bild%02d 
+
+# Dateiname erstellen 
+FILENAME=$IMGDIR/$TIME:$BILD.jpg 
+
+# Bilderfolge aufnehmen
+raspistill -w 1200 -h 800 -tl 1000 -t 58000 -o $FILENAME -n 
+```
+
+### Erklärung der Befehle:
+```{}
+raspistill:python Befehl zur Aufnahme von Bildern
+-tl 1000:  jede Sekunde wird ein Bild gemacht (mit der Raspberry Cam
+-t 58000:  der Zeitraum beträgt 58 Sekunden
+-o 		     für den Speicherort
+%02d.jpg 	 zweistellige Durchnummerierung der Bilderfolge
+-w 		     Breite der Auflösung
+-h 		     Höhe der Auflösung
+-n 		     zum Unterdrücken der Vorschau
+
+GPS einsetzen: 
+  -x GPS.GPSLongitude=5/1,10/1,15/1 
+```
+
+##### Das Skript läuft genau 58 Sekunden und macht jede Sekunde ein Bild. Anschließend startet crontab das Skript wieder. Aufgrund der Reaktionszeit von crontab (Im Anschluss erläutert) darf das Skript nicht für 59 Sekunden laufen. (Falls doch wird das Skript erst nach einer Minute Wartezeit erneut gestartet.) 
+
+##### Detaillierte Informationen zur Einrichtung der Kamera: http://www.netzmafia.de/skripten/hardware/RasPi/kamera/index.html
+
+### Automatische Ausführung des Scripts nach Starten des Raspberrys
+
+##### in der Konsole 
+```{}
+sudo crontab -e 
+```
+##### eingeben. Beim ersten Aufruf muss ein Editor zum Ausführen ausgewählt werden. Empfohlen wird der Editor nano, der einfach zu bedienen ist. (2 auswählen und mit Eingabe bestätigen) 
+
+##### Anschließend kann im Crontab die unterste Zeile wie folgend ergänzt werden:
+```{}
+*/1 * * * * sh cameraskript 
+```
+##### Nun speichern des Skriptes mit Strg + o. Wichtig ist der folgende Speicherort 
+
+##### /etc/ . /cron.d/crontab
+
+##### Nun wird das Skript zu jeder vollen Minute ausgeführt. 
+
+##### Ausführliche Beschreibungen finden sich unter https://github.com/mileusna/crontab 
+
+----- 

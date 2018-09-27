@@ -1,4 +1,4 @@
-# The Unmanned Radio Telemetry Limno-Explorer (TURTLE)
+# TURTLE - The Unmanned Radio Telemetry Limno-Explorer
 
 ## About the Project
 

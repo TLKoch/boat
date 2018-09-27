@@ -29,16 +29,19 @@ Die Nummer am Zeilenende steht für eine Aufgabe.
 Das Material in der Dropbox kann auch eingebaut werden:
 [Dropbox UAV Mikrofernerkundung](https://www.dropbox.com/home/UAV%20Mikrofernerkundung)
 
-## Let us know what you´re working on:
+#### Let us know what you´re working on:
 
 - Max (9?)
 - Laura (13, 3)
 
-Die Ergebnisse können dann auf diesem branch in einen extra Ordner hochgeladen werden (vgl. Beispiel Max). Auf der Homepage wird dann versucht die Dateien zu verlinken.
+Die Ergebnisse können dann auf dem 2. Zweig "Active branches" hochgeladen werden (vgl. Beispiel "cam"). Auf der Homepage wird dann versucht die Dateien zu verlinken.
 
-### Project Information (Status)
+### Project Information (latest Status, please edit if not correct)
 
-
+- "See"-fahrt zur ersten Datenaufnahme hat noch nicht stattgefunden, da an dem Tag noch einige Vorbereitungen getroffen werden mussten. Ein erster Test vor der Uni mit Sensorik am Boot ist aber gut gelaufen.
+- Die "See"-fahrt steht noch aus, deshalb gibt es noch keine Daten zur Beispielsauswertung.
+- Vorher müssen einige Stecker auf dem Board für die Sensorik neu gesteckt werden, da sie locker geworden sind.
+  Prototypeboards sind bestellt, so könnten die Stecker auch gleich gelötet werden um das zu verhindern.
 
 ### Instructions for page editing
 You can use the [editor on GitHub](https://github.com/TLKoch/boat/edit/master/index.md) to maintain and preview the content for your website in Markdown files.

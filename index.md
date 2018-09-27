@@ -1,5 +1,46 @@
 ## Welcome to the project "Building a lowbudget UWV"
 
+### Workflow (suggestion)
+
+- „See“-fahrt zur Aufnahme von Beispielsdaten (1)
+- Löten (14)
+- je eine Datenauswertung pro Sensor als Beispiel (begrenzen auf bestimmte Zeitspanne?):
+	- Lidar	(Skript und 3D?-Plot) (2)
+	- Sonar (Skript und 2D/(3D?)-Plot) (3)
+	- Wassertemperatur (Skript und Temp-Kurve) (4)
+	- Bilder der Kameras auswählen?
+	- Sensor vergessen?
+- Anleitungen:
+	- Bootsbau 
+ 	(z.B. angehalten an Dropbox: UAV Mikrofernerkundung: FinalReport_FloatingEagle.pdf, 
+	d.h. 1.  Ansatz: 3-D druck, 2. Ansatz Plattform, Bauplanskizzen, 3D-Druck-Vorlagen, 	Kostenbilanzen, warum haben wir uns für
+  den 2. Ansatz entschieden?) (5, 6, 7)
+	- Sensorik Übersicht (Befestigung, Schaltplan, Skizzen) (8)
+	- cams (Befestigung am Boot, Herstellerbeschreibung?, Installation/Setting/Skripte)(9)
+ 	- sonar (Befestigung am Boot, Funktion/Herstellerbeschreibung?, Installation/Setting/Skripte) (10)
+	- lidar (Befestigung am Boot, Funktion/Herstellerbeschreibung?, Installation/Setting/Schaltplan/Skripte) (11)
+  - Temperatursensor (Befestigung am Boot, Funktion/Herstellerbeschreibung?, Installation/Setting/Schaltplan/Skripte) (15)
+- Steuerung (Funktionsweise, Herstellerbeschreibung, Setting, zugehörige Programme erwähnen) (12)
+- Homepage (Jeckyll/GitHub) (13)
+- weitere Ideen?
+
+Die Nummer am Zeilenende steht für eine Aufgabe.
+
+Das Material in der Dropbox kann auch eingebaut werden:
+[Dropbox UAV Mikrofernerkundung](https://www.dropbox.com/home/UAV%20Mikrofernerkundung)
+
+## Let us know what you´re working on:
+
+- Max (9?)
+- Laura (13, 3)
+
+Die Ergebnisse können dann auf diesem branch in einen extra Ordner hochgeladen werden (vgl. Beispiel Max). Auf der Homepage wird dann versucht die Dateien zu verlinken.
+
+### Project Information (Status)
+
+
+
+### Instructions for page editing
 You can use the [editor on GitHub](https://github.com/TLKoch/boat/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.

@@ -1,7 +1,17 @@
 # The Unmanned Radio Telemetry Limno-Explorer (TURTLE)
 
 ## About the Project
-image/link to abstract
+
+We – a group of master students of Physical Geography and Geoarcheology of Philipps-University Marburg – want to
+
+- contribute to improve knowledge of the state of river- and lakebeds as well as riparian areas
+- facilitate excess to this knowledge for every citizen
+- introduce a cost-effective Do-it-Your-Self approach, how to take environmental data in this field
+- supply a simple technical guideline combined with basic informatic and UAV-based instructions
+
+by building the TURTLE-platform. This website shows our working procedure and explains how you can get on board! 
+
+Link to Abstract english german
 
 ## Project Documentation
 
